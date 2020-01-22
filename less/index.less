@@ -104,6 +104,16 @@ html, body {
 			a:hover{
 				.color-change();
 			}
+
+			@media(max-width: 500px){
+				flex-direction: column;
+				text-align: center;
+				align-content: center;
+			}
+		}
+
+		@media(max-width: 500px){
+			margin-left:0;
 		}
 	
 	}
@@ -115,6 +125,10 @@ html, body {
 		img{
 			width:35%;
 			border:1px solid black;
+
+			@media(max-width: 500px){
+				display:none;
+			}
 		}
 	
 		div{
@@ -129,6 +143,7 @@ html, body {
 		p{
 			padding:2% 0;
 			font-size: 1.2em;
+
 		}
 	
 		#teamUP{
@@ -137,11 +152,18 @@ html, body {
 			padding:1%;
 			font-size: 1.3em;
 			.reverse-color();	
+
+			@media(max-width: 500px){
+				width:100%;
+				padding:3%;
+			
+			}
 		}
 	
 		#teamUP:hover{
 			.color-change();
 		}
+
 	}
 	
 	#middle{
@@ -167,6 +189,16 @@ html, body {
 				border:1px solid @maincolor;
 				font-size: 1.2em;
 			}
+
+			@media(max-width: 500px){
+				width:100%;
+			}
+		}
+
+		@media(max-width: 500px){
+			flex-direction: column;
+			text-align: center;
+			align-content: center;
 		}
 	
 	}
@@ -193,8 +225,7 @@ html, body {
 		.dark{
 			background-color: @maincolor;
 		}
-	
-		
+
 	}
 	
 	footer{

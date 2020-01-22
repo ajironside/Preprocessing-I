@@ -167,6 +167,20 @@ body header nav a:hover {
   background-color: blue;
   color: lightblue;
 }
+@media (max-width: 500px) {
+  html header nav,
+  body header nav {
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+  }
+}
+@media (max-width: 500px) {
+  html header,
+  body header {
+    margin-left: 0;
+  }
+}
 html #banner,
 body #banner {
   background-color: lightgray;
@@ -176,6 +190,12 @@ html #banner img,
 body #banner img {
   width: 35%;
   border: 1px solid black;
+}
+@media (max-width: 500px) {
+  html #banner img,
+  body #banner img {
+    display: none;
+  }
 }
 html #banner div,
 body #banner div {
@@ -201,6 +221,13 @@ body #banner #teamUP {
   background-color: dimgray;
   border: 2px solid black;
   border-radius: 0.5em;
+}
+@media (max-width: 500px) {
+  html #banner #teamUP,
+  body #banner #teamUP {
+    width: 100%;
+    padding: 3%;
+  }
 }
 html #banner #teamUP:hover,
 body #banner #teamUP:hover {
@@ -234,6 +261,20 @@ body #middle div li {
   padding: 5%;
   border: 1px solid lightgray;
   font-size: 1.2em;
+}
+@media (max-width: 500px) {
+  html #middle div,
+  body #middle div {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  html #middle,
+  body #middle {
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+  }
 }
 html #history,
 body #history {
