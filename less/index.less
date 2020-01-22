@@ -53,8 +53,29 @@ table {
     box-sizing: border-box;
 }
 
+/*variables*/
 @maincolor: lightgray;
 @bold:font-weight bold;
+
+/*mixins*/
+
+.flex-space-around(){
+	display:flex;
+	justify-content: space-around;
+}
+
+.reverse-color(){
+	color:white;
+	background-color: dimgray;
+	border: 2px solid black;
+	border-radius: .5em;
+}
+
+.color-change(){
+	background-color:blue;
+	color:lightblue;
+}
+
 
 html, body {
 	height: 100%;
@@ -72,9 +93,17 @@ html, body {
 		padding:3% 0;		
 	
 		nav{
-			display:flex;
-			justify-content: space-around;
+			.flex-space-around();
 			align-content: flex-end;
+
+			a{
+				.reverse-color();
+				padding:3%;
+			}
+
+			a:hover{
+				.color-change();
+			}
 		}
 	
 	}
@@ -107,21 +136,16 @@ html, body {
 			text-align: center;	
 			padding:1%;
 			font-size: 1.3em;
-			color:white;
-			background-color: dimgray;	
-			border: 2px solid black;
-			border-radius: .5em;
+			.reverse-color();	
 		}
 	
 		#teamUP:hover{
-			background-color:blue;
-			color:lightblue;
+			.color-change();
 		}
 	}
 	
 	#middle{
-		display:flex;
-		justify-content: space-evenly;
+		.flex-space-around();
 		line-height: 1.2em;
 		
 		div{
@@ -158,10 +182,9 @@ html, body {
 		}
 	
 		div{
-			display: flex;
+			.flex-space-around();
 			flex-direction: row;
 			width:100%;
-			justify-content: space-around;
 			padding:3% 0;
 	
 		
@@ -175,8 +198,7 @@ html, body {
 	}
 	
 	footer{
-		color:white;
-		background-color: dimgray;
+		.reverse-color();
 		padding:3%;
 		text-align: center;
 	}

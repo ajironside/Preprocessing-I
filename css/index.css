@@ -130,6 +130,8 @@ table {
 * {
   box-sizing: border-box;
 }
+/*variables*/
+/*mixins*/
 html,
 body {
   height: 100%;
@@ -151,6 +153,19 @@ body header nav {
   display: flex;
   justify-content: space-around;
   align-content: flex-end;
+}
+html header nav a,
+body header nav a {
+  color: white;
+  background-color: dimgray;
+  border: 2px solid black;
+  border-radius: 0.5em;
+  padding: 3%;
+}
+html header nav a:hover,
+body header nav a:hover {
+  background-color: blue;
+  color: lightblue;
 }
 html #banner,
 body #banner {
@@ -195,7 +210,7 @@ body #banner #teamUP:hover {
 html #middle,
 body #middle {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   line-height: 1.2em;
 }
 html #middle div,
@@ -234,9 +249,9 @@ body #history h4 {
 html #history div,
 body #history div {
   display: flex;
+  justify-content: space-around;
   flex-direction: row;
   width: 100%;
-  justify-content: space-around;
   padding: 3% 0;
 }
 html #history .dark,
@@ -247,6 +262,8 @@ html footer,
 body footer {
   color: white;
   background-color: dimgray;
+  border: 2px solid black;
+  border-radius: 0.5em;
   padding: 3%;
   text-align: center;
 }
