@@ -179,3 +179,34 @@ header nav {
   background-color: blue;
   color: lightblue;
 }
+#middle {
+  display: flex;
+  justify-content: space-evenly;
+  line-height: 1.2em;
+}
+#middle div {
+  width: 50%;
+  align-items: center;
+  padding: 3%;
+}
+#middle div h2 {
+  font-size: 2em;
+  font-weight: bold;
+  padding: 2%;
+}
+#middle div h3 {
+  font-size: 1.8em;
+  font-weight: bold;
+  padding: 2%;
+}
+#middle div li {
+  padding: 5%;
+  border: 1px solid lightgray;
+  font-size: 1.2em;
+}
+footer {
+  color: white;
+  background-color: dimgray;
+  padding: 3%;
+  text-align: center;
+}
