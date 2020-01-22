@@ -147,10 +147,11 @@ header nav {
 }
 #banner {
   background-color: lightgrey;
-  padding: 3%;
+  padding: 5%;
 }
 #banner img {
   width: 35%;
+  border: 1px solid black;
 }
 #banner div {
   border-bottom: 1px solid black;
@@ -161,7 +162,7 @@ header nav {
   padding: 2% 0;
 }
 #banner p {
-  padding: 5% 0;
+  padding: 2% 0;
   font-size: 1.2em;
 }
 #banner #teamUP {
