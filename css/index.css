@@ -135,99 +135,116 @@ body {
   height: 100%;
   width: 90%;
   margin: auto;
+  font-family: 'Ubuntu', sans-serif;
 }
-header {
+html .bold,
+body .bold {
+  font-weight: font-weight bold;
+}
+html header,
+body header {
   margin-left: 40%;
   padding: 3% 0;
 }
-header nav {
+html header nav,
+body header nav {
   display: flex;
   justify-content: space-around;
   align-content: flex-end;
 }
-#banner {
-  background-color: lightgrey;
+html #banner,
+body #banner {
+  background-color: lightgray;
   padding: 5%;
 }
-#banner img {
+html #banner img,
+body #banner img {
   width: 35%;
   border: 1px solid black;
 }
-#banner div {
+html #banner div,
+body #banner div {
   border-bottom: 1px solid black;
 }
-#banner div h1 {
+html #banner div h1,
+body #banner div h1 {
   font-size: 3em;
-  font-weight: bold;
   padding: 2% 0;
 }
-#banner p {
+html #banner p,
+body #banner p {
   padding: 2% 0;
   font-size: 1.2em;
 }
-#banner #teamUP {
+html #banner #teamUP,
+body #banner #teamUP {
   width: 20%;
   text-align: center;
   padding: 1%;
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: white;
   background-color: dimgray;
   border: 2px solid black;
   border-radius: 0.5em;
 }
-#banner #teamUP:hover {
+html #banner #teamUP:hover,
+body #banner #teamUP:hover {
   background-color: blue;
   color: lightblue;
 }
-#middle {
+html #middle,
+body #middle {
   display: flex;
   justify-content: space-evenly;
   line-height: 1.2em;
 }
-#middle div {
+html #middle div,
+body #middle div {
   width: 50%;
   align-items: center;
   padding: 3%;
 }
-#middle div h2 {
+html #middle div h2,
+body #middle div h2 {
   font-size: 2em;
-  font-weight: bold;
   padding: 2%;
 }
-#middle div h3 {
+html #middle div h3,
+body #middle div h3 {
   font-size: 1.8em;
-  font-weight: bold;
   padding: 2%;
 }
-#middle div li {
+html #middle div li,
+body #middle div li {
   padding: 5%;
   border: 1px solid lightgray;
   font-size: 1.2em;
 }
-#history {
+html #history,
+body #history {
   display: flex;
   flex-direction: column;
   padding: 2% 0;
 }
-#history h4 {
+html #history h4,
+body #history h4 {
   font-size: 1.6em;
-  font-weight: bold;
   padding: 2%;
 }
-#history div {
+html #history div,
+body #history div {
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: space-around;
   padding: 3% 0;
 }
-#history div .bold {
-  font-weight: bold;
-}
-#history .dark {
+html #history .dark,
+body #history .dark {
   background-color: lightgray;
 }
-footer {
+html footer,
+body footer {
   color: white;
   background-color: dimgray;
   padding: 3%;
