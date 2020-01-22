@@ -204,6 +204,29 @@ header nav {
   border: 1px solid lightgray;
   font-size: 1.2em;
 }
+#history {
+  display: flex;
+  flex-direction: column;
+  padding: 2% 0;
+}
+#history h4 {
+  font-size: 1.6em;
+  font-weight: bold;
+  padding: 2%;
+}
+#history div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  padding: 3% 0;
+}
+#history div .bold {
+  font-weight: bold;
+}
+#history .dark {
+  background-color: lightgray;
+}
 footer {
   color: white;
   background-color: dimgray;
