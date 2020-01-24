@@ -1,1 +1,310 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+/*variables*/
+/*mixins*/
+html,
+body {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  font-family: 'Ubuntu', sans-serif;
+}
+html .bold,
+body .bold {
+  font-weight: font-weight bold;
+}
+html header,
+body header {
+  margin-left: 40%;
+  padding: 3% 0;
+}
+html header nav,
+body header nav {
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-end;
+}
+html header nav a,
+body header nav a {
+  color: white;
+  background-color: dimgray;
+  border: 2px solid black;
+  border-radius: 0.5em;
+  padding: 3%;
+}
+html header nav a:hover,
+body header nav a:hover {
+  background-color: blue;
+  color: lightblue;
+}
+@media (max-width: 500px) {
+  html header nav,
+  body header nav {
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+  }
+}
+@media (max-width: 500px) {
+  html header,
+  body header {
+    margin-left: 0;
+  }
+}
+html #banner,
+body #banner {
+  background-color: lightgray;
+  padding: 5%;
+}
+html #banner img,
+body #banner img {
+  width: 35%;
+  border: 1px solid black;
+}
+@media (max-width: 500px) {
+  html #banner img,
+  body #banner img {
+    display: none;
+  }
+}
+html #banner div,
+body #banner div {
+  border-bottom: 1px solid black;
+}
+html #banner div h1,
+body #banner div h1 {
+  font-size: 3em;
+  padding: 2% 0;
+}
+html #banner p,
+body #banner p {
+  padding: 2% 0;
+  font-size: 1.2em;
+}
+html #banner #teamUP,
+body #banner #teamUP {
+  width: 20%;
+  text-align: center;
+  padding: 1%;
+  font-size: 1.3em;
+  color: white;
+  background-color: dimgray;
+  border: 2px solid black;
+  border-radius: 0.5em;
+}
+@media (max-width: 500px) {
+  html #banner #teamUP,
+  body #banner #teamUP {
+    width: 100%;
+    padding: 3%;
+  }
+}
+html #banner #teamUP:hover,
+body #banner #teamUP:hover {
+  background-color: blue;
+  color: lightblue;
+}
+html #middle,
+body #middle {
+  display: flex;
+  justify-content: space-around;
+  line-height: 1.2em;
+}
+html #middle div,
+body #middle div {
+  width: 50%;
+  align-items: center;
+  padding: 3%;
+}
+html #middle div h2,
+body #middle div h2 {
+  font-size: 2em;
+  padding: 2%;
+}
+html #middle div h3,
+body #middle div h3 {
+  font-size: 1.8em;
+  padding: 2%;
+}
+html #middle div li,
+body #middle div li {
+  padding: 5%;
+  border: 1px solid lightgray;
+  font-size: 1.2em;
+}
+@media (max-width: 500px) {
+  html #middle div,
+  body #middle div {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  html #middle,
+  body #middle {
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+  }
+}
+html #history,
+body #history {
+  display: flex;
+  flex-direction: column;
+  padding: 2% 0;
+}
+html #history h4,
+body #history h4 {
+  font-size: 1.6em;
+  padding: 2%;
+}
+html #history div,
+body #history div {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  padding: 3% 0;
+}
+html #history .dark,
+body #history .dark {
+  background-color: lightgray;
+}
+html footer,
+body footer {
+  color: white;
+  background-color: dimgray;
+  border: 2px solid black;
+  border-radius: 0.5em;
+  padding: 3%;
+  text-align: center;
+}
